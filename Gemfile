@@ -44,13 +44,18 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'sqlite3', :group => [:development, :test]
-group :production do
-  gem 'thin'
+group :development do
   gem 'pg'
 end
 
-group :development do
-   gem 'taps'
-   gem 'rvm'
+group :production do
+  gem 'pg'
+  gem 'carrierwave'
+  gem 'rmagick'
+  gem 'heroku'
+  gem 'git-rails'
+  gem "jquery-rails"
+  gem 'hoe', '~> 1.5.1'
+  gem "RedCloth"
+  gem 'i18n'
 end

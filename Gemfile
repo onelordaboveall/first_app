@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-#Use heroku
+#Use heroku :)
 gem 'heroku'
 
 

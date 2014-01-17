@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use pg as the database for Active Record
-gem 'pg'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -44,18 +43,11 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :development do
-  gem 'pg'
+group :development, :test do
+     gem 'sqlite3'
 end
 
 group :production do
-  gem 'pg'
-  gem 'carrierwave'
-  gem 'rmagick'
-  gem 'heroku'
-  gem 'git-rails'
-  gem "jquery-rails"
-  gem 'hoe', '~> 1.5.1'
-  gem "RedCloth"
-  gem 'i18n'
+     gem 'pg'
+     gem 'rails_12factor'
 end
